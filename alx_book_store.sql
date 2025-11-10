@@ -21,7 +21,7 @@ CREATE TABLE alx_book_store.Customers
 CREATE TABLE alx_book_store.Orders
 (
     order_id INT PRIMARY KEY,
-    FOREIGN KEY(customer_id) REFERENCES Customers(customer_id),
+    FOREIGN KEY (customer_id) REFERENCES Customers(customer_id),
     order_date DATE
 );
 CREATE TABLE alx_book_store.order_details(
