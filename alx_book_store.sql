@@ -1,3 +1,5 @@
+CREATE DATABASE IF NOT EXISTS alx_book_store
+
 create table alx_book_store.Authors(
 author_id int primary key,
 author_name varchar(215));
