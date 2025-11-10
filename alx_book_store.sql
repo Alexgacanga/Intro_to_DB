@@ -26,7 +26,7 @@ CREATE TABLE alx_book_store.Orders
 );
 CREATE TABLE alx_book_store.order_details(
     orderdetailid INT PRIMARY KEY,
-    FOREIGN KEY (orderdetailid) REFERENCES Orders(order_id),
-    FOREIGN KEY (orderdetailid) REFERENCES Books(book_id),
+    FOREIGN KEY (order_id) REFERENCES Orders(order_id),
+    FOREIGN KEY (book_id) REFERENCES Books(book_id),
     quantity DOUBLE
 );
