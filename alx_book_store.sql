@@ -30,3 +30,7 @@ CREATE TABLE alx_book_store.Order_Details(
     FOREIGN KEY (book_id) REFERENCES Books(book_id),
     quantity DOUBLE
 );
+
+CREATE USER 'myuser'@'localhost' IDENTIFIED BY 'mypassword';
+GRANT ALL PRIVILEGES ON alx_book_store.* TO 'myuser'@'localhost';
+FLUSH PRIVILEGES;
